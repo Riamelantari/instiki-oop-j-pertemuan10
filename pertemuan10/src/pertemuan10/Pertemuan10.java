@@ -7,11 +7,10 @@ package pertemuan10;
 import java.sql.Statement;
 import java.sql.ResultSet;
 import java.sql.SQLException;
-
 /**
  *
- * @author Riamelantari
- * TGL : 20-05-2025
+ * @author Sawitri
+ * TGL : 20 Mei 2025
  */
 public class Pertemuan10 {
 
@@ -19,19 +18,19 @@ public class Pertemuan10 {
      * @param args the command line arguments
      */
     public static void main(String[] args) throws SQLException {
-        dbkoneksi cnn = new dbkoneksi ();
+        dbkoneksi cnn = new dbkoneksi();
         Statement st = cnn.koneksi().createStatement();
         
         String sql = "SELECT * FROM mhs;";
-        ResultSet res= st.executeQuery(sql);
+        ResultSet res = st.executeQuery(sql);
         
-        
-        while (res.next() ){
+        while (res.next()){
             System.out.println("Nama: "+res.getString("NAMA"));
-            System.out.println("Nama: "+res.getString("NIM"));
-            System.out.println("Nama: "+res.getString("PRODI"));
-            System.out.println("Nama: "+res.getString("ALAMAT"));
+            System.out.println("Nim: "+res.getString("NIM"));
+            System.out.println("Prodi: "+res.getString("PRODI"));
+            System.out.println("Alamat: "+res.getString("ALAMAT"));
         }
+        
     }
     
 }

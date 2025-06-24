@@ -6,8 +6,8 @@ package pertemuan12;
 
 /**
  *
- * @author Komang Ria Melantari
- * TGL : 03 06
+ * @author Arista Anjani
+ * TGL: 3 Juni 2025
  */
 public class Pertemuan12 {
 
